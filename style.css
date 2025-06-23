@@ -1,16 +1,20 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eaf4fc;
+  color: #0b3d91;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #333;
 }
 
 header {
-  background: #000;
+  background: linear-gradient(90deg, #0b3d91, #4a90e2);
   color: white;
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -18,31 +22,47 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 2em;
+  font-weight: 600;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
 }
 
 #hero {
-  background: #444;
-  color: white;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+  color: #fff;
   text-align: center;
-  padding: 3em 1em;
+  padding: 6em 1em;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 section {
-  padding: 2em;
+  padding: 2.5em 1em;
   max-width: 900px;
   margin: auto;
 }
 
+h2 {
+  border-bottom: 3px solid #0b3d91;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
 footer {
-  background: #222;
+  background: #0b3d91;
   color: white;
   text-align: center;
   padding: 1em 0;
+  margin-top: 3em;
+  font-weight: 600;
 }
